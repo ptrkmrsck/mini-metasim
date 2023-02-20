@@ -44,6 +44,9 @@ p {
 img {
   max-width: 100%;
   min-width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  filter: grayscale(100%);
 }
 .production {
   margin-top: 2%;
@@ -59,6 +62,11 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   column-gap: 2%;
+}
+
+.logo {
+  aspect-ratio: initial;
+  object-fit: initial;
 }
 .upcoming {
   grid-template-columns: 1fr 1fr 1fr;
